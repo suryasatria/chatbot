@@ -11,7 +11,7 @@ Template antarmuka chatbot modern dan modular yang dibangun menggunakan Next.js 
 ## 🚀 Cara Menjalankan Secara Lokal
 
 1. **Clone repositori ini**
-   git clone https://github.com/suryasatria/nextjs-modular-chatbot.git
+   git clone https://github.com/suryasatria/chatbot.git
    cd nextjs-modular-chatbot
 
 2. **Instal dependensi**
@@ -24,16 +24,19 @@ Template antarmuka chatbot modern dan modular yang dibangun menggunakan Next.js 
 
 ## 📁 Struktur Folder Utama
 
-├── app/
-│   ├── api/chat/route.ts    # API Endpoint simulasi
-│   └── page.tsx             # Halaman utama aplikasi
-├── components/
-│   └── chat/
-│       ├── ChatInput.tsx    # Komponen form input
-│       ├── ChatLayout.tsx   # Container utama chatbot
-│       ├── MessageBubble.tsx# Styling gelembung pesan individu
-│       └── MessageList.tsx  # Area scroll pesan
-├── hooks/
-│   └── useChat.ts           # State management & logika fetching
-└── lib/
-    └── utils.ts             # Fungsi utilitas Tailwind (clsx, twMerge)
+📦 nextjs-modular-chatbot
+├── 📂 app
+│   ├── 📂 api
+│   │   └── 📂 chat
+│   │       └── 📄 route.ts        # API Endpoint simulasi
+│   └── 📄 page.tsx                # Halaman utama aplikasi
+├── 📂 components
+│   └── 📂 chat
+│       ├── 📄 ChatInput.tsx       # Komponen form input teks
+│       ├── 📄 ChatLayout.tsx      # Container utama UI chatbot
+│       ├── 📄 MessageBubble.tsx   # Styling gelembung pesan individu
+│       └── 📄 MessageList.tsx     # Area render & scroll daftar pesan
+├── 📂 hooks
+│   └── 📄 useChat.ts              # State management & logika fetching (Custom Hook)
+└── 📂 lib
+    └── 📄 utils.ts                # Fungsi utilitas Tailwind (clsx, twMerge)
