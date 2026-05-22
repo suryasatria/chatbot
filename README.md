@@ -37,6 +37,3 @@ Template antarmuka chatbot modern dan modular yang dibangun menggunakan Next.js 
 │   └── useChat.ts           # State management & logika fetching
 └── lib/
     └── utils.ts             # Fungsi utilitas Tailwind (clsx, twMerge)
-
-## 🛠 Cara Integrasi dengan LLM Nyata
-Untuk menghubungkan dengan AI sesungguhnya, edit file \`app/api/chat/route.ts\` dan gantikan simulasi \`mockReply\` dengan request ke API model bahasa pilihan Anda.
