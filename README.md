@@ -1,0 +1,57 @@
+# Next.js Modular Chatbot
+
+Template antarmuka chatbot modern dan modular yang dibangun menggunakan Next.js (App Router), TypeScript, dan Tailwind CSS.
+
+## ✨ Fitur Utama
+- **Arsitektur Modular:** Logika dipisahkan (Custom Hooks) dari komponen presentasional UI.
+- **Modern UI/UX:** Desain terinspirasi oleh shadcn/ui dengan animasi loading dan auto-scroll yang halus.
+- **Type-Safe:** Dibangun sepenuhnya dengan TypeScript.
+- **App Router API:** Dilengkapi endpoint simulasi yang siap diganti dengan Vercel AI SDK atau API nyata.
+
+## 🚀 Cara Menjalankan Secara Lokal
+
+1. **Clone repositori ini**
+   \`\`\`bash
+   git clone https://github.com/suryasatria/nextjs-modular-chatbot.git
+   cd nextjs-modular-chatbot
+   \`\`\`
+
+2. **Instal dependensi**
+   \`\`\`bash
+   npm install
+   # atau
+   yarn install
+   # atau
+   pnpm install
+   \`\`\`
+
+3. **Jalankan server pengembangan**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+4. Buka [http://localhost:3000](http://localhost:3000) di browser Anda untuk melihat hasilnya.
+
+## 📁 Struktur Folder Utama
+
+\`\`\`
+├── app/
+│   ├── api/chat/route.ts    # API Endpoint simulasi
+│   └── page.tsx             # Halaman utama aplikasi
+├── components/
+│   └── chat/
+│       ├── ChatInput.tsx    # Komponen form input
+│       ├── ChatLayout.tsx   # Container utama chatbot
+│       ├── MessageBubble.tsx# Styling gelembung pesan individu
+│       └── MessageList.tsx  # Area scroll pesan
+├── hooks/
+│   └── useChat.ts           # State management & logika fetching
+└── lib/
+    └── utils.ts             # Fungsi utilitas Tailwind (clsx, twMerge)
+\`\`\`
+
+## 🛠 Cara Integrasi dengan LLM Nyata
+Untuk menghubungkan dengan AI sesungguhnya, edit file \`app/api/chat/route.ts\` dan gantikan simulasi \`mockReply\` dengan request ke API model bahasa pilihan Anda.
+
+---
+Dibuat dengan ❤️ untuk komunitas Open Source.
